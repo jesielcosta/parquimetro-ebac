@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parquímetro - EBAC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Parquímetro</h1>
+        <p>Confira abaixo os valores e tempos correspondentes</p>
+
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th>Valor</th>
+                    <th>Tempo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>R$ 1,00</td>
+                    <td>30 minutos</td>
+                </tr>
+                <tr>
+                    <td>R$ 1,75</td>
+                    <td>60 minutos</td>
+                </tr>
+                <tr>
+                    <td>R$ 3,00</td>
+                    <td>120 minutos (tempo máximo)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="formulario">
+            <label for="valorInserido">Insira o valor pago:</label>
+            <input type="number" step="0.01" min="0" placeholder="Ex: 2.00" id="valorInserido">
+            <button id="btnCalcular" onclick="calcularEstadia()">Calcular</button>
+        </div>
+
+        <p id="resultado"></p>
+        <p id="troco"></p>
+
+    </main>
+</body>
+</html>
